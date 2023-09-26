@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --first-color: #f0e3d8;
+    --second-color: #C5AD8E;
+    --third-color: #A07558;
+    --white: #FFFFFF;
+}
+
+/* General */
+html{
+    font-family: 'Montserrat';
+    background-color: var(--first-color);
+}
+
+.bold{
+    font-weight: bold;
+}
+.row {
+    margin: 0 !important;
+}
+
+/* project list (no projects) */
+.noproject-wrapper {
+    margin-top: 250px;
+    padding: 80px 0px;
+    border: 6px solid var(--third-color);
+    border-style: dashed;
+}
+
+.noproject-wrapper h3{
+    padding: 10px;
+    margin-bottom: 50px;
+    color: var(--second-color);
+}
+.noproject-wrapper .btn-large{
+    background-color: var(--third-color);
+}
+
+/* project add view */
+form ul li.category {
+    display: inline-block;
+    background-color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+/* project detail statistics */
+.section-stats h1{
+    font-size: 4vw;
+    color: var(--second-color);
+    margin: 15px 0px;
+}
+
+
+@media(max-width: 992px){
+    .section-stats h1{
+        font-size: calc(16px + 6vw);
+    }
+}
+
+
+/* project detail expenses */
+.section-expenses button{
+    padding: 0px 40px;
+    font-weight: bold;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, .25);
+    background-color: var(--third-color);
+}
+.section-expenses .expense{
+    font-size: 16px;
+    border-radius: 0;
+    margin: 0;
+}
+.section-expenses .expense .category{
+    font-size: 13px;
+}
+.section-expenses li:nth-child(even) .expense{
+    background-color: var(--first-color);
+}
+.section-expenses .close-icon:hover{
+    cursor: pointer;
+}
